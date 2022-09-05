@@ -25,4 +25,37 @@ let people = ["Sergei", "Mariia", "Boris", "Abel"];
   */
 
   const people = ["Sergei", "Mariia", "Boris", "Abel"];
+
+  for(let i = 0;i<people.length; i++)
+  {
+    console.log("the name of the people is :", people[i]);
+  }
+// shift method remove elements from first end
+  // let removeFristEle = people.shift();
+  // console.log(removeFristEle);
+  // console.log(people);
+
+// pop method remove elements from last end
+  // let removeLastEle = people.pop();
+  // console.log(removeLastEle);
+  // console.log(people);
+// unshift method add elements from first end
+  // let addFirstEle = people.unshift("Mahalete");
+  // console.log(addFirstEle);
+  // console.log(people);
+
+// push method add elements from last end
+  // let addEndEle = people.push("preeti");
+  // console.log(addEndEle);
+  // console.log(people);
+
+  // let sliceTwo = people.slice(2);
+  // console.log(sliceTwo);
+  // console.log(people);
+
+  let index = people.indexOf("Mariia");
+  console.log(index);
+  console.log(people);
+
+
   

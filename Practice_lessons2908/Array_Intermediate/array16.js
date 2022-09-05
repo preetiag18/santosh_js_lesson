@@ -10,17 +10,19 @@ it receives exists in the apps parameter, and false otherwise.
  * @param {string} app
  */
 function isAppUsed(apps, app) {
-    let a;
-   apps.find(function(myApp){
-        if(myApp === app){
-            a = true;
-        }
-        else{
-            a= false;
-    }})
+//     let a;
+//    apps.find(function(myApp){
+//         if(myApp === app){
+//             a = true;
+//         }
+//         else{
+//             a= false;
+//     }})
 
     
-    return a;
+//     return a;
+
+return apps.includes(app);
 }
 
 // Sample usage - do not modify

@@ -12,6 +12,9 @@ age incremented (add 1 to the existing value).
  * @param {number} person[].age
  */
 function incrementAge(person) {
+    person.age = person.age +1;
+
+    return person;
 
 }
 

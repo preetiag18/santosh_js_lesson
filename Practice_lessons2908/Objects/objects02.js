@@ -13,7 +13,11 @@ These values are provided as a city parameter which is an object.
  * @param {number} city.value
  */
 function getWeather(city) {
-
+    //  city = {
+    //     name: 'Rajasthan',
+    //     value:40
+    // }
+    return `It's currently ${city.value} degrees in ${city.name}`;
 }
 
 // Sample usage - do not modify
