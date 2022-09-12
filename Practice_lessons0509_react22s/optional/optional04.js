@@ -8,7 +8,8 @@ Otherwise, it should return undefined.
  * @param {last} [user.info.name]
  */
 const getFullName = user => {
-
+    return user.info?.name.toLowerCase();
+ 
 }
 
 // Sample usage - do not modify

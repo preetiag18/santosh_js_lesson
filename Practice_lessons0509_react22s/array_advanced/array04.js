@@ -7,6 +7,8 @@ Complete the function removeFirstApp such that it removes the first element of t
  * @param {array} apps
  */
 const removeFirstApp = apps => {
+    apps.splice(0, 1);
+    return apps;
 
 }
 

@@ -9,6 +9,7 @@
  */
 const getLatLng = (userLocation) => {
   //destructure into 2 variables: lat & lng
+  const {lat,lng} = userLocation;
 
   return `The latitude is ${lat} and the longitude is ${lng}`;
 };
