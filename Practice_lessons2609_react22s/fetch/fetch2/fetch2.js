@@ -6,15 +6,9 @@ and return its result. Also, visualize that the result of fetch is a Promise. Yo
 */
 
 const checkForNewNotifications = () => {
-    //write here
-   return fetch("https://programmingjs-90a13-default-rtdb.europe-west1.firebasedatabase.app/notifications.json")
-    // .then(res => res.json())
-    // .then(data =>{
-    //     console.log(data);
-    
+ 
 }
 
 
 // Sample usage - do not modify
-const result = checkForNewNotifications();
-console.log(result); // Promise{<pending>}
+checkForNewNotifications();

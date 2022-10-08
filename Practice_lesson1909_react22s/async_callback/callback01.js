@@ -17,7 +17,7 @@ Note that the welcomeUser function accepts a success callback as its second para
  * @param {string} name
  */
  const sayHello = (name) => {
-         console.log("Done!");
+        welcomeUser(name, () => {console.log("Done!")});
  }
 
 // Sample usage - do not modify
