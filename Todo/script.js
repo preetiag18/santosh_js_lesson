@@ -15,9 +15,6 @@ window.onload = (event) =>{
     });
 }
 
-
-
-
 const saveTaskToLocalStorage = (taskName) => {
     const existingTasks = JSON.parse(localStorage.getItem(tasksKey));
     if (existingTasks == undefined) {
@@ -28,7 +25,6 @@ const saveTaskToLocalStorage = (taskName) => {
     newTasksList.push(taskName);
     localStorage.setItem(tasksKey, JSON.stringify( newTasksList));
 }
-
 
 const deleteTaskForUser = (li) => {
  ul.removeChild(li)
@@ -50,7 +46,7 @@ const updateTodoTasksListForUser = (x) => {
     spanWithValue.innerText = x;
     spanWithBtn.innerText = "X";
 
-    // add checkbox to the list when we clicked
+    // add checkbox to the list on click
     spanWithBtn.addEventListener("click", () => {
        removeFromLocalStorage(x);
        list.classList.toggle('checked');
@@ -59,15 +55,6 @@ const updateTodoTasksListForUser = (x) => {
         },1000);
        
     });
-
-    // list.addEventListener("click", () => {
-    //     removeFromLocalStorage(x);
-    //     list.classList.toggle('checked');
-    //     setTimeout(() => {
-    //         deleteTaskForUser(list)
-    //     },3000);
-
-    // })
 
     list.appendChild(spanWithValue);
     list.appendChild(spanWithBtn);
@@ -85,6 +72,3 @@ const addTaskToToDoList = () => {
     }
     
 }
-
-
-

@@ -113,7 +113,6 @@ li{
     align-items: center;
     justify-content: space-between;
     border: 1px solid #939697;
-    cursor: pointer;
     background-color: #c5e1e6;
     height: 50px;
     margin-bottom: 8px;
@@ -123,9 +122,8 @@ li{
 }
 
 li span{
-    font-family: 'Poppins',sans-serif;
-    font-size: 15px;
-    font-weight: 400;
+    font-size: 1.5rem;
+    font-weight: 300;
 }
 
 li button{
